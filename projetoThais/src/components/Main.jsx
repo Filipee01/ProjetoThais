@@ -1,16 +1,14 @@
+import TimeLine from "../assets/images/timeLine.svg"
 
 export default function Main() {
 
     return(
-    
         <main id="top-button">
-          <section className="sections section1">
-            <div className="wrapp-content">
-              <h2>Olá, me chamo <span>Luiz Filipe</span></h2>
-              <h3 className="text-information">Estudante de Ciência da Computação - CI UFPB</h3>
-              <a id="cv" href="https://drive.google.com/u/2/uc?id=15yTE5lEgVNhJyRmklS0zcFzTf4nF3KEx&export=download" target="_blank">Baixar CV</a>
-            </div>
-          </section>
+          <div className="timeLine">
+            <img src={TimeLine} alt="" />
+          </div>
+            <h3 className="timeLineh"><span>Linha do Tempo</span></h3>
+          <hr />
           <section className="sections section2">
             <h2 id="about">Sobre</h2>
             <div className="wrapp-contain">

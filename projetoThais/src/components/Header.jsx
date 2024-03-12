@@ -1,12 +1,11 @@
 import {Link} from "react-router-dom"
-import Logo from "../assets/logo/logo.svg"
+import Logo from "../assets/logo/logo.png"
 
 export default function Header(){
   return (
-
       <header className="navegation">
     <div className="logo">
-      <img src={Logo} alt="Logo" />
+      <img className="logoP" src={Logo} alt="Logo" />
     </div>
       <nav>
         <ul className="container-nav">
@@ -15,8 +14,7 @@ export default function Header(){
           <Link to = {'/career'} className="nav-link"> Carreiras </Link> 
           <Link to = {'/game'} className="nav-link"> Game</Link> 
         </ul>
-      </nav>             
+      </nav> 
   </header>
-
     )
 }
