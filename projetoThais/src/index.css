@@ -14,7 +14,7 @@
   }
   
   body {
-    background-color: rgb(34, 34, 34);
+    background: radial-gradient(circle, #000 , #00ff66);
     color: #FFFFFF;
     font-family:'Poppins', sans-serif;
     margin: 0 auto;
@@ -37,7 +37,18 @@
     background-color: rgb(34, 34, 34);
     z-index: 9999;
   }
-  
+  .container-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-link {
+    border: 1px solid #00ff66;
+    margin: 0.5rem
+  }
+
   .logo {
     display: flex;
     align-items: center;
