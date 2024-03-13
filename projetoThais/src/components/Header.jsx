@@ -10,9 +10,9 @@ export default function Header(){
       <nav>
         <ul className="container-nav">
           <Link to = {'/'} className="nav-link"> Inicio </Link> 
-          <Link to = {'/timeline'} className="nav-link"> Linha do Tempo </Link> 
+          <Link to = {'/TimeLine'} className="nav-link"> Linha do Tempo </Link> 
           <Link to = {'/career'} className="nav-link"> Carreiras </Link> 
-          <Link to = {'/game'} className="nav-link"> Game</Link> 
+          <Link to = {'/game'} className="nav-link">Quiz</Link> 
         </ul>
       </nav> 
   </header>

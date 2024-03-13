@@ -5,6 +5,8 @@ export default function Timeline() {
   return(
       <>
         <Header />
+
+        
         <Footer />
       </>
   )

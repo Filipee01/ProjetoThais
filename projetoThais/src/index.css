@@ -287,14 +287,15 @@
   }
   
   footer {
-    margin-top: 10rem;
-    background-color: var(--generalColor);
+    background: #060606;
+    /* background: linear-gradient( to bottom ,#060606, var(--generalColor) );  */
     height: 15rem;
   }
   
   .footer-finish {
+    /* background: linear-gradient( to bottom ,#060606, var(--generalColor) ); */
     text-align: center;
-    color: black;
+    color: #ffffff;
     margin-bottom: 2rem;
   }
   
@@ -302,13 +303,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
   
   .contact img {
     display: flex;
     justify-content: center;
-    width: 5rem;
+    width: 7rem;
     margin: 0;
   }
   
