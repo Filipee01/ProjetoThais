@@ -7,30 +7,37 @@ export default function Footer() {
 
     return (
       <footer id="contacte">
-        <h3 class="footer-finish">Desenvolvido por:</h3>
-        <div class="contacte">
-          <a href="https://github.com/Filipee01" target="_blank"><img src={Filipe} alt="filipedev" /></a>
-          <a href="https://github.com/JoaoVitorSampaio" target="_blank"><img src={Joao} alt="joaodev" /></a>
-          <a href="https://github.com/GBRO1000" target="_blank"><img src={Gabriel} alt="gabrieldev" /></a>
-          <a href="#" target="_blank"><img src={Felipe} alt="felipedev" /></a>
-        </div>
-          <div className="git">
-          <div className="footerImg"><img src={Git} alt="" /></div>
-            <a href="https://github.com/Filipee01" target="_blank">
-              <p>Filipee01</p>
-            </a>
-            <div className="footerImg"><img src={Git} alt="" /></div>
-            <a href="https://github.com/JoaoVitorSampaio" target="_blank">
-              <p>JVSampaio</p>
-            </a>
-            <div className="footerImg"><img src={Git} alt="" /></div>
-            <a href="https://github.com/GBRO1000" target="_blank">
-              <p>GBRO1000</p>
-            </a>
-            <div className="footerImg"><img src={Git} alt="" /></div>
-            <p>Felipesvb</p>
+      <h3 className="footer-finish">Desenvolvido por:</h3>
+      <div className="contacte">
+        <a href="https://github.com/Filipee01" target="_blank">
+          <img src={Filipe} alt="filipedev" />
+          <div className="developer">
+            <img className="git-icon" src={Git} alt="" />
+            <p>Filipee01</p>
           </div>
+        </a>
+        <a href="https://github.com/JoaoVitorSampaio" target="_blank">
+          <img src={Joao} alt="joaodev" />
+          <div className="developer">
+            <img className="git-icon" src={Git} alt="" />
+            <p>JvSampaio</p>
+          </div>
+        </a>
+        <a href="https://github.com/gabrielbribeiroo" target="_blank">
+          <img src={Gabriel} alt="gabrieldev" />
+          <div className="developer">
+            <img className="git-icon" src={Git} alt="" />
+            <p>GbRibeiro</p>
+          </div>
+        </a>
+        <a href="https://github.com/FelipeSVB" target="_blank">
+          <img src={Felipe} alt="felipedev" />
+          <div className="developer">
+            <img className="git-icon" src={Git} alt="" />
+            <p>FelipeSVB</p>
+          </div>
+        </a>
+      </div>
     </footer>
-    )
-
+  );
 }

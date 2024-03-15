@@ -80,24 +80,15 @@
     display: flex;
     align-items: center;
     justify-content:center;
-    gap: 3.5rem;
+    padding: 1rem;
+    gap: 2rem;
   }
 
   .git p {
-    margin-left: -2rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     font-size: 1.3rem;
-    /* gap: 30rem; */
   }
 
   .git img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     width: 3.5rem; 
   }
 
@@ -108,6 +99,7 @@
     justify-content: center;
     width: 3rem;
   }
+
   
   nav {
     font-size: 1.8rem;
@@ -158,14 +150,14 @@
     /* padding-top: 12rem; */
   }
 
-  .timeLine{
+  .timeLine2{
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .timeLine img{
-    width: 30rem;
+  .timeLine2 img{
+    width: 40rem;
   }
   
   h2 {
@@ -333,30 +325,53 @@
   }
   
   .contacte {
-    margin-left: 3.8rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    /* gap: 5rem; */
   }
   
   .contacte img {
+    margin-right: -2rem;
+    width: 9.5rem;
+  }
+
+  .contacte a {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 9.4rem;
-    /* justify-content: center; */
-    /* margin: 0 auto; */
+  }
+
+  .contacte .git-icon {
+    width: 3rem;
   }
   
-  .finish {
+
+  .developer {
+    display: flex;
+    align-items: center; 
+    padding: 1.5rem;
+  }
+
+  
+  .developer img.git-icon {
+   margin-right: 1rem;
+   width: 2rem; 
+  }
+
+  .developer p {
+    margin: 0;
+  }
+  
+  
+  /* .finish {
     margin-top: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
-  }
+  } */
   
   .to-topp {
     position: fixed;

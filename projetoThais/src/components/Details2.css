@@ -1,0 +1,11 @@
+.section3 {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .wrapp-computerImg2 img{
+    /* margin-top: 15rem; */
+    width: 40rem;
+  }

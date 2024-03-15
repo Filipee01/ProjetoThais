@@ -1,0 +1,97 @@
+#top-btn {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1.5rem;
+    border: 3px solid var(--generalColor);
+    border-radius: 5rem;
+    /* padding-top: 12rem; */
+  }
+
+  .timeLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .timeLine img{
+    width: 65rem;
+  }
+  
+  
+  h3{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color: var(--generalColor);
+  }
+  
+  span {
+    color: var(--generalColor);
+  }
+  
+  
+  .image-profile {
+    border-radius: 50%;
+    padding: .4rem;
+    border: solid var(--generalColor);
+    width: 35rem;
+    margin-left: 28rem;
+  }
+  
+  
+  .section1 {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .section2{
+    margin-left: 2rem;
+  }
+
+  .section2 h3{
+    font-style: italic;
+  }
+  
+  
+  .avisos {
+    display: flex;
+    font-size: 4.1rem;
+    flex-direction: row;
+    width: 70%;
+  }
+  
+  
+  .section2 {
+    margin-top: 10rem;
+  }
+  
+  .wrapp-contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+    color: red;
+  }
+  
+  .wrapp-contain p {
+    font-size: 1.8rem;
+    width: 100%;
+    line-height: 3rem;
+  }
+
+  hr{
+    margin-top: 57rem;
+    transform: rotate(90deg) ;
+  }
+
+  .timeLineh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
