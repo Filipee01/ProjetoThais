@@ -11,7 +11,7 @@ export default function Footer() {
         <div class="contacte">
           <a href="https://github.com/Filipee01" target="_blank"><img src={Filipe} alt="filipedev" /></a>
           <a href="https://github.com/JoaoVitorSampaio" target="_blank"><img src={Joao} alt="joaodev" /></a>
-          <a href="https://github.com/GBRO1000"><img src={Gabriel} alt="gabrieldev" /></a>
+          <a href="https://github.com/GBRO1000" target="_blank"><img src={Gabriel} alt="gabrieldev" /></a>
           <a href="#" target="_blank"><img src={Felipe} alt="felipedev" /></a>
         </div>
           <div className="git">
