@@ -73,10 +73,41 @@
 
   .wrapp-computerImg img{
     margin-top: 15rem;
-    margin-left: 30rem;
     width: 50rem;
   }
 
+  .git{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 3.5rem;
+  }
+
+  .git p {
+    margin-left: -2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    /* gap: 30rem; */
+  }
+
+  .git img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem; 
+  }
+
+  .footerImg img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+  }
   
   nav {
     font-size: 1.8rem;
@@ -177,6 +208,8 @@
   .section1 {
     margin-top: 5rem;
     display: flex;
+    justify-content: space-around;
+    gap: 1rem;
   }
   
   
@@ -287,30 +320,34 @@
   }
   
   footer {
-    background: #060606;
+    /* background: #060606; */
     /* background: linear-gradient( to bottom ,#060606, var(--generalColor) );  */
-    height: 15rem;
+    height: 0vh;
   }
   
   .footer-finish {
     /* background: linear-gradient( to bottom ,#060606, var(--generalColor) ); */
     text-align: center;
     color: #ffffff;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
   
-  .contact {
+  .contacte {
+    margin-left: 3.8rem;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 5rem;
   }
   
-  .contact img {
+  .contacte img {
     display: flex;
+    align-items: center;
     justify-content: center;
-    width: 7rem;
-    margin: 0;
+    width: 9.4rem;
+    /* justify-content: center; */
+    /* margin: 0 auto; */
   }
   
   .finish {
