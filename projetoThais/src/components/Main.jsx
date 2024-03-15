@@ -1,4 +1,4 @@
-import TimeLine from "../assets/images/timeLine.svg"
+import TimeLine from "../assets/images/timeLine1.png"
 
 export default function Main() {
 
