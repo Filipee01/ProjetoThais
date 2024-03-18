@@ -48,7 +48,7 @@ export default function Game() {
         {
           question: '9° - Qual dessas opções representa uma área de carreira em que um cientista da computação pode trabalhar com a criação e manutenção de ambientes virtuais imersivos?',
           options: ['Engenharia de Redes', 'Desenvolvimento de Jogos', 'Segurança da Informação', 'Administração de Banco de Dados'],
-          correctAnswer: 'c',
+          correctAnswer: 'b',
         },
         {
           question: '10° -Em qual dessas áreas um cientista da computação trabalharia principalmente com o desenvolvimento de algoritmos para simular processos físicos e criar efeitos visuais?',

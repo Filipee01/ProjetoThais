@@ -139,6 +139,7 @@
   
   main {
     background-color: #ffff;
+    color: #000;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -148,6 +149,13 @@
     border: 3px solid var(--generalColor);
     border-radius: 5rem;
     /* padding-top: 12rem; */
+  }
+
+  .linhaTempo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 50rem; */
   }
 
   .timeLine2{
@@ -229,11 +237,6 @@
     font-size: 1.8rem;
     width: 100%;
     line-height: 3rem;
-  }
-
-  hr{
-    margin-top: 57rem;
-    transform: rotate(90deg) ;
   }
 
   .timeLineh{
