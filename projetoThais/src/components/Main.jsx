@@ -7,7 +7,7 @@ export default function Main() {
           <div className="timeLine2">
             <img src={TimeLine} alt="" />
           </div>
-            <h3 className="timeLineh"><span>Linha do Tempo</span></h3>
+            <h3 id="timeLine" className="timeLineh"><span>Linha do Tempo</span></h3>
           <hr />
           <section className="sections section2">
             <h2 id="about">Sobre</h2>
@@ -16,9 +16,6 @@ export default function Main() {
             </div>
           </section>
     </main>
-            
-   
-    
 
     )
 
