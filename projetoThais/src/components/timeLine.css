@@ -102,9 +102,10 @@ ul li:nth-child(even) .circle {
 }
 ul li .date {
 	position: absolute;
-	width: 130px;
+	width: 160px;
 	height: 33px;
-	background-image: linear-gradient(to right,var(--generalColor),rgb(85, 238, 123));
+	/* background-image: linear-gradient(to right,#7f00ff,#e100ff); */
+	background-image: linear-gradient(to right,var(--generalColor),rgb(2, 129, 34));
 	border-radius: 15px;
 	top: -45px;
 	display: grid;
@@ -113,6 +114,8 @@ ul li .date {
 	font-size: 13px;
 	box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
 }
+
+
 .container ul li:nth-child(odd) {
 	float: left;
 	clear: right;

@@ -7,7 +7,7 @@ export default function Game() {
    const questions = [
         {
           question: '1° - Qual dessas áreas de carreira envolve a criação de software e aplicativos para dispositivos móveis?',
-          options: ['Engenharia de Software', 'Segurança da Informação', 'Desenvolvimento de Jogos', 'Análise de Dados'],
+          options: ['Desenvolvimento Mobile', 'Segurança da Informação', 'Desenvolvimento Front-End', 'Análise de Dados'],
           correctAnswer: 'a',
         },
         {
@@ -22,7 +22,7 @@ export default function Game() {
         },
         {
           question: '4° - Em qual dessas áreas um cientista da computação trabalharia principalmente com a construção de interfaces de usuário interativas e acessíveis?',
-          options: ['Desenvolvimento Front-end', 'Segurança Cibernética', 'Administração de Banco de Dados', 'Engenharia de Software'],
+          options: ['Desenvolvimento Front-end', 'Desenvolvimento Back-End', 'Administração de Banco de Dados', 'Desenvolvimento Mobile'],
           correctAnswer: 'a',
         },
         {
@@ -64,6 +64,7 @@ export default function Game() {
       const [score, setScore] = useState(0);
       const [showScore, setShowScore] = useState(false);
       const [answeredQuestions, setAnsweredQuestions] = useState([]);
+      
     
       const handleOptionClick = (option) => {
         setSelectedOption(option);
@@ -74,12 +75,20 @@ export default function Game() {
         const isCorrect = selectedOption === correctAnswer;
     
         setResult(isCorrect ? 'green' : 'red');
-    
-        if (isCorrect) {
+
+        const isAlreadyCorrect = answeredQuestions.includes(currentQuestion);
+  
+        if (!isAlreadyCorrect && isCorrect) {
           setScore(score + 1);
         } else {
           setCorrectAnswer(correctAnswer);
         }
+    
+        // if (isCorrect) {
+        //   setScore(score + 1);
+        // } else {
+        //   setCorrectAnswer(correctAnswer);
+        // }
     
         // Passar para a próxima pergunta após um breve intervalo
         setTimeout(() => {

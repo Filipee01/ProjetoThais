@@ -11,7 +11,7 @@ export default function Header(){
       <nav>
         <ul className="container-nav">
           <Link to = {'/'} className="nav-link"> Inicio </Link> 
-          <a href="#page">Linha do Tempo</a>
+          <a className="def" href="#page">Linha do Tempo</a>
           <Link to = {'/career'} className="nav-link"> Carreiras </Link> 
           <Link to = {'/game'} className="nav-link">Quiz</Link> 
         </ul>

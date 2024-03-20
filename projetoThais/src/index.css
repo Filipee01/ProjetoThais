@@ -249,6 +249,11 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+
+  .def:hover{
+    color: var(--generalColor);
+    transition: .3s all;
+  }
   
   .section2 img {
     width: 50rem;
