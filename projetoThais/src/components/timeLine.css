@@ -20,6 +20,7 @@
 	display: grid;
 	place-items: center;
 	background-color: rgb(245, 245, 245);
+	border-radius: 2rem;
 	padding: 50px 0;
 }
 .main .head {

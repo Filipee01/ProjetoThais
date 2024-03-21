@@ -12,7 +12,7 @@ export default function Game() {
         },
         {
           question: '2° - Em qual dessas áreas um cientista da computação trabalharia principalmente com algoritmos e estruturas de dados para otimizar processos?',
-          options: ['Inteligência Artificial', 'Computação em Nuvem', 'Ciência de Dados', 'Análise de Algoritmos'],
+          options: ['Inteligência Artificial', 'Computação em Nuvem', 'Desenvolvimento Front-End', 'Análise de Algoritmos'],
           correctAnswer: 'd',
         },
         {
@@ -63,69 +63,54 @@ export default function Game() {
       const [correctAnswer, setCorrectAnswer] = useState(null);
       const [score, setScore] = useState(0);
       const [showScore, setShowScore] = useState(false);
-      const [answeredQuestions, setAnsweredQuestions] = useState([]);
-      
-    
-      const handleOptionClick = (option) => {
-        setSelectedOption(option);
-      };
-    
-      const handleConfirmAnswer = () => {
-        const correctAnswer = questions[currentQuestion].correctAnswer;
-        const isCorrect = selectedOption === correctAnswer;
-    
-        setResult(isCorrect ? 'green' : 'red');
+      const [answeredQuestions, setAnsweredQuestions] = useState([]);  
 
-        const isAlreadyCorrect = answeredQuestions.includes(currentQuestion);
-  
-        if (!isAlreadyCorrect && isCorrect) {
-          setScore(score + 1);
-        } else {
-          setCorrectAnswer(correctAnswer);
-        }
-    
-        // if (isCorrect) {
-        //   setScore(score + 1);
-        // } else {
-        //   setCorrectAnswer(correctAnswer);
-        // }
-    
-        // Passar para a próxima pergunta após um breve intervalo
-        setTimeout(() => {
-          if (currentQuestion + 1 < questions.length) {
-            setCurrentQuestion(currentQuestion + 1);
-            setSelectedOption(null);
-            setResult(null);
-            setCorrectAnswer(null);
-            setAnsweredQuestions([...answeredQuestions, currentQuestion]); // Adiciona o índice da questão respondida ao histórico
-          } else {
-            setShowScore(true);
-          }
-        }, 2000);
+      const handleOptionClick = (option) => {
+          setSelectedOption(option);
       };
-    
+
+      const handleConfirmAnswer = () => {
+          const correctAnswer = questions[currentQuestion].correctAnswer;
+          const isCorrect = selectedOption === correctAnswer;
+
+          setResult(isCorrect ? 'green' : 'red');
+
+          if (!answeredQuestions.includes(currentQuestion)) {
+              setAnsweredQuestions([...answeredQuestions, currentQuestion]);
+              if (isCorrect) {
+                  setScore(score + 1);
+              }
+          }
+
+          setTimeout(() => {
+              if (currentQuestion + 1 < questions.length) {
+                  setCurrentQuestion(currentQuestion + 1);
+                  setSelectedOption(null);
+                  setResult(null);
+              } else {
+                  setShowScore(true);
+              }
+          }, 2000);
+      };
+
       const handleGoBack = () => {
-        if (answeredQuestions.length > 0) {
-          const lastAnsweredQuestionIndex = answeredQuestions.pop(); // Remove o último índice do histórico
-          setCurrentQuestion(lastAnsweredQuestionIndex);
-          setSelectedOption(null);
-          setResult(null);
-          setCorrectAnswer(null);
-          setAnsweredQuestions([...answeredQuestions]); // Atualiza o histórico sem o último índice removido
-        }
+          if (answeredQuestions.length > 0) {
+              const lastAnsweredQuestionIndex = answeredQuestions.pop();
+              setCurrentQuestion(lastAnsweredQuestionIndex);
+              setSelectedOption(null);
+              setResult(null);
+              setAnsweredQuestions([...answeredQuestions]);
+          }
       };
 
       const handleRestart = () => {
-        setCurrentQuestion(0);
-        setSelectedOption(null);
-        setResult(null);
-        setCorrectAnswer(null);
-        setScore(0);
-        setShowScore(false);
-        setAnsweredQuestions([]);
+          setCurrentQuestion(0);
+          setSelectedOption(null);
+          setResult(null);
+          setScore(0);
+          setShowScore(false);
+          setAnsweredQuestions([]);
       };
-      
-      
       
     
       return (
