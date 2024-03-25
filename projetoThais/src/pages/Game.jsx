@@ -90,18 +90,18 @@ export default function Game() {
               } else {
                   setShowScore(true);
               }
-          }, 2000);
+          }, 3000);
       };
 
-      const handleGoBack = () => {
-          if (answeredQuestions.length > 0) {
-              const lastAnsweredQuestionIndex = answeredQuestions.pop();
-              setCurrentQuestion(lastAnsweredQuestionIndex);
-              setSelectedOption(null);
-              setResult(null);
-              setAnsweredQuestions([...answeredQuestions]);
-          }
-      };
+      // const handleGoBack = () => {
+      //     if (answeredQuestions.length > 0) {
+      //         const lastAnsweredQuestionIndex = answeredQuestions.pop();
+      //         setCurrentQuestion(lastAnsweredQuestionIndex);
+      //         setSelectedOption(null);
+      //         setResult(null);
+      //         setAnsweredQuestions([...answeredQuestions]);
+      //     }
+      // };
 
       const handleRestart = () => {
           setCurrentQuestion(0);
@@ -137,9 +137,9 @@ export default function Game() {
                   </ul>
                   <div className="btns">
                     <button className='confirm-button' onClick={handleConfirmAnswer}>Confirmar resposta</button>
-                    {answeredQuestions.length > 0 && (
+                    {/* {answeredQuestions.length > 0 && (
                       <button className='back-button' onClick={handleGoBack}>Voltar</button>
-                    )}
+                    )} */}
                   </div>
                   {result === 'red' && (
                     <div className="correct-answer">
