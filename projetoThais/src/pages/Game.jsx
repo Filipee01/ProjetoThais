@@ -26,7 +26,7 @@ export default function Game() {
           correctAnswer: 'a',
         },
         {
-          question: '5° -Qual dessas opções representa uma área de carreira em que um cientista da computação pode trabalhar com análise de grandes volumes de dados para obter insights valiosos?',
+          question: '5° - Qual dessas opções representa uma área de carreira em que um cientista da computação pode trabalhar com análise de grandes volumes de dados para obter insights valiosos?',
           options: ['Engenharia de Software', 'Desenvolvimento de Jogos', 'Ciência de Dados', 'Computação Gráfica'],
           correctAnswer: 'c',
         },
