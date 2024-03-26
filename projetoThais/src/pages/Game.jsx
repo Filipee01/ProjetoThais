@@ -51,7 +51,7 @@ export default function Game() {
           correctAnswer: 'b',
         },
         {
-          question: '10° -Em qual dessas áreas um cientista da computação trabalharia principalmente com o desenvolvimento de algoritmos para simular processos físicos e criar efeitos visuais?',
+          question: '10° - Em qual dessas áreas um cientista da computação trabalharia principalmente com o desenvolvimento de algoritmos para simular processos físicos e criar efeitos visuais?',
           options: ['Realidade Virtual e Aumentada', 'Inteligência Artificial', 'Análise de Algoritmos', 'Ciência de Dados'],
           correctAnswer: 'a',
         },
